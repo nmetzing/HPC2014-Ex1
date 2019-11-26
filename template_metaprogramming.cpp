@@ -1,12 +1,12 @@
 #include <iostream>
 
-template <int N>
+template<int N>
 int factorial() {
-    return N * factorial<N-1>();
+    return N * factorial<N - 1>();
 }
 
-template <>
-int factorial<0> () {
+template<>
+int factorial<0>() {
     return 1;
 }
 
